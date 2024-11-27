@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <title>DoxygenLite CSS Documentation</title>
+</head>
+<body>
+    <header>
+        <h1>DoxygenLite Custom CSS for Doxygen Documentation</h1>
+    </header>
+    <section>
+        <h2>Features of DoxygenLite.css</h2>
+        <ul>
+            <li><strong>Modern Design</strong>: Adds a clean, responsive, and visually appealing design to your Doxygen documentation.</li>
+            <li><strong>Enhanced Readability</strong>: Improved typography, spacing, and layout for better document readability.</li>
+            <li><strong>Interactive Elements</strong>: Styles for navigation, code blocks, tables, and headings ensure an engaging user experience.</li>
+            <li><strong>Responsive Design</strong>: Ensures that the documentation is fully responsive and works seamlessly on various screen sizes, including mobile devices.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Installation and Usage</h2>
+        <ol>
+            <li><strong>Download the CSS File:</strong>
+                <p>Clone this repository or download the <code>DoxygenLite.css</code> file directly.</p>
+            </li>
+            <li><strong>Integrate with Your Doxygen Project:</strong>
+                <p>Place the <code>DoxygenLite.css</code> file in the directory where your Doxygen HTML files are generated.</p>
+                <p>Open your Doxygen configuration file (<code>Doxyfile</code>) and update the following setting:</p>
+                <pre>
+HTML_EXTRA_STYLESHEET = DoxygenLite.css
+                </pre>
+            </li>
+            <li><strong>Generate Documentation:</strong>
+                <p>Run the Doxygen command to generate your HTML documentation:</p>
+                <pre>
+doxygen Doxyfile
+                </pre>
+            </li>
+            <li><strong>View Documentation:</strong>
+                <p>Open the <code>index.html</code> file from the generated documentation folder in a web browser.</p>
+            </li>
+        </ol>
+    </section>
+    <section>
+        <h2>Advantages</h2>
+        <ul>
+            <li><strong>Improved Aesthetics:</strong> Provides a professional and polished look to your documentation.</li>
+            <li><strong>Ease of Customization:</strong> CSS variables allow for quick and straightforward adjustments.</li>
+            <li><strong>Enhanced Code Presentation:</strong> Styles for <code>code</code> and <code>pre</code> elements improve the visual hierarchy and readability of code snippets.</li>
+            <li><strong>Keyboard and Accessibility Features:</strong> Focus styles and smooth scrolling ensure accessibility for all users.</li>
+            <li><strong>Mobile-First Design:</strong> Documentation is fully responsive and adapts gracefully to smaller screens.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Disadvantages</h2>
+        <ul>
+            <li><strong>Browser Compatibility:</strong> Older browsers may not fully render advanced styles.</li>
+            <li><strong>Manual Integration:</strong> Requires additional steps to integrate with Doxygen.</li>
+            <li><strong>Learning Curve for Customization:</strong> Adjusting variables or styles may require basic CSS knowledge.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Customization</h2>
+        <h3>Variables for Quick Customization</h3>
+        <p>The CSS file includes variables that you can modify:</p>
+        <Code>
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --info-color: #0dcaf0;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-bg: #ffffff;
+    --text-color: #212529;
+    --border-radius: 0.375rem;
+    --box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --transition: all 0.2s ease-in-out;
+}
+        </code>
+        <p>Example customizations:</p>
+        <ul>
+            <li>Change <code>--primary-color</code> for accent color.</li>
+            <li>Adjust <code>--text-color</code> and <code>--light-bg</code> for dark mode themes.</li>
+        </ul>
+        <h3>Advanced Customization</h3>
+        <p>Feel free to tweak classes and elements in the CSS file for specific requirements.</p>
+    </section>
+
+    <section>
+        <i>Pls note this CSS is only applicable for the Lite version</i>
+        <p>Make sure to generate the Doxygen documentation in only <b>LIGHT</b>theme</p>
+    </section>
+
+    <section>
+        <h2>Troubleshooting</h2>
+        <ul>
+            <li><strong>Styles Not Applying:</strong> Ensure the <code>HTML_EXTRA_STYLESHEET</code> path in <code>Doxyfile</code> points to <code>DoxygenLite.css</code>.</li>
+            <li><strong>Responsive Design Issues:</strong> Verify that you are viewing the documentation in a modern browser.</li>
+            <li><strong>Accessibility Issues:</strong> Test keyboard navigation and focus styles across multiple browsers.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Contribution</h2>
+        <p>If you find any issues or have suggestions, feel free to fork this repository, make changes, and submit a pull request.</p>
+    </section>
+</body>
+</html>
