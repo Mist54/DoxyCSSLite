@@ -1,0 +1,11 @@
+digraph "ClassLibrary1.MathOperations.Divide"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ClassLibrary1.MathOperations.\lDivide",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Divides the first integer by the second and returns the result."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ClassLibrary1.MathOperations.Main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_class_library1_1_1_math_operations.html#ad471f7650500810d44decfce2dbacbe8",tooltip="The entry point of the program. Demonstrates the use of the MathOperations class."];
+}
